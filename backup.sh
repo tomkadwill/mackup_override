@@ -8,7 +8,6 @@ echo "backing up /Users/tom/.vim/ .."
 if [ -d ~/Dropbox/Mackup/.vim/ ]; then
     echo "A file named /Users/tom/Dropbox/Mackup/.vim already exists in the backup."
     read -p "Are you sure that you want to replace it ? <Yes|No>" -n 1 -r
-    echo    # (optional) move to a new line
     if [[ $REPLY =~ ^[Yy]$ ]]
     then
       cp -r ~/.vim ~/Dropbox/Mackup/.vim
